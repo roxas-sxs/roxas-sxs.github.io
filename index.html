@@ -124,36 +124,41 @@ const SEASON_START = { year: 2026, month: 11, day: 11 };
 const SERVER_START = { year: 2026, month: 11, day: 11 };
 // ==============================================================
 const MILESTONES = [
-  { level: 106, title: "Tier 4 Class unlocks" },
-  { level: 108, title: "Fantomon Evolution unlocks" },
-  { level: 110, title: "Champion 2 rank up" },
-  { level: 116, title: "Split Mirage unlocks" },
-  { level: 120, title: "Champion 3 rank up" },
-  { level: 130, title: "Warlord’s Rest unlocks", day: 14 },
-  { level: 131, title: "Seasonal Power unlocks" }
+  { level: 44, title: "Tier 2 Class unlocks" },
+  { level: 82, title: "Tier 3 Class unlocks" },
+  { level: 100, title: "Aquoorgin Shrine unlocks" },
+  { level: 101, title: "Seasonal Power unlocks" }
 ];
 // day = first season day; every = repeat interval in days
 const RECURRING = [
-  { name: "Server Tournament preparation begins", day: 4, every: 7 },
-  { name: "Nexus Tournament preparation begins", day: 5, every: 14 },
-  { name: "Weekly Reset", day: 6, every: 7 },
-  { name: "Grand Treasure Hunt resets", day: 4, every: 7 },
-  { name: "Pilgrimage Pass resets", day: 10, every: 14 },
-  { name: "Void Rift event", day: 5, every: 14 },
-  { name: "Chaos Invasion event", day: 12, every: 14 }
+  { name: "Weekly Reset", day: 5, every: 7 },
+  { name: "Pilgrimage Pass resets", day: 14, every: 14 },
+  { name: "Void Rift event", day: 12, every: 14 },
+  { name: "Chaos Invasion event", day: 5, every: 14 }
 ];
 const EVENTS = [
-  { name: "Acme Nexus opens", day: 15 },
-  { name: "Second Gacha releases", day: 32 },
-  { name: "Pandarial releases", day: 46 },
-  { name: "End of season (approximate)", day: 67 }
+  { name: "Cinder Ridge opens", day: 4 },
+  { name: "Season 1 Begins", day: 12 },
+  { name: "Aqualis opens", day: 12 },
+  { name: "Whaleback arrives", day: 26 },
+  { name: "End of season 1 (approximate)", day: 46 }
 ];
 const DUNGEONS = [
-  { name: "Demonseal Gorge", day: 1, desc: "A gorge that once imprisoned legions of monsters. Its seal now falters.", info: [["Level Requirement","100"],["Normal","none"],["Hard","2.35M"]] },
-  { name: "Warlord’s Rest", day: 14, desc: "Famed generals rest in peace here. The place is now overrun by monsters.", info: [["Level Requirement","130"],["Normal","3.55M"],["Hard","5M"],["Nightmare","6M"]] },
-  { name: "Cloudcrest Temple", day: 27, desc: "A temple embraced by lush greenery and drifting clouds. Now in ruins, its former grandeur still lingers.", info: [["Normal","6.2M"],["Hard","7.7M"],["Nightmare","9.8M"]] },
-  { name: "Bladeshire", day: 40, desc: "The shire stands firm atop a spiritual leyline, a guardian of time watching over the ancient kingdom.", info: [["Normal","10M"],["Hard","12.5M"],["Nightmare","15.8M"]] },
-  { name: "Celestship", day: 53, desc: "A massive warship shaped like a fortress, once a legendary weapon in Loong Haven’s conquest.", info: [["Normal","16.5M"],["Hard","20M"],["Nightmare","24.5M"],["Purgatory","40M"]] }
+  { name: "Auroradrasil", day: 0,
+    desc: "Monsters hide in the shadows of this colossal tree. Venture deep into its branches to root them out!",
+    info: [["Normal", "none"], ["Hard", "36K"]] },
+  { name: "Mecha Summit", day: 4,
+    desc: "Face the trials of this ancient testing ground. Only the mightiest will claim ultimate victory!",
+    info: [["Normal", "none"], ["Hard", "180K"]] },
+  { name: "Ocean Palace Ruins", day: 12,
+    desc: "Once a tale from ancient scrolls. This Submerged palace now beckons with countless hidden treasures!",
+    info: [["Normal", "none"], ["Hard", "580K"]] },
+  { name: "Aquorigin Shrine", day: 24,
+    desc: "A sacred shrine for river deities. In its depths an ancient entity stands eternal watch.",
+    info: [["Level Requirement", "100"],["Normal", "930K"], ["Hard", "1.45M"], ["Nightmare", "2.05M"]] },
+  { name: "Hellhold", day: 33,
+    desc: "A ruined ancient city built overnight. It stands like a ghost-infested gateway, leading straight into the underworld.",
+    info: [["Normal", "2.25M"], ["Hard", "2.75M"], ["Nightmare", "3.9M"], ["Purgatory", "6.2M"]] }
 ];
 // dates "YYYY-MM-DD", happen at the daily reset
 const SEASONAL = [
@@ -167,8 +172,6 @@ const GIFT_CODES = [
   { code: "HALLOWEEN", reward: "", expires: "2026-11-03" }
 ];
 const LINKS = [
-  { name: "Our Nexus Discord", url: "https://discord.gg/erKNThSsj7", note: "Join the Discord for current members of our shared servers." },
-  { name: "Nexus 41 Discord", url: "https://discord.gg/76cSrUFAbR", note: "Join the Discord with future members of our Nexus." },
   { name: "Primostar Calculator", url: "https://kakotheris.neocities.org/primostar-calculator", note: "Calculate your Primordial Star rewards before the season ends." },
   { name: "Experience Calculator", url: "https://swordxstaff-compass.com/xp-calculator", note: "Estimate how long it takes to reach a level." },
   { name: "Generic Game Calendar", url: "https://qymaple.github.io/sxs-research-global/maple-sxs-timeline.html", note: "Raw calendar data." },
